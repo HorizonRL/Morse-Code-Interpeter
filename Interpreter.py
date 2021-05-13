@@ -10,7 +10,7 @@ actions = {
     "TO_MORSE": 'M',
 }
 
-action_str = "\nTo quit press: " + actions["QUIT"] + \
+action_str = "\n\nTo quit press: " + actions["QUIT"] + \
              ", To translate from english to morse press: " + actions["TO_MORSE"] + \
              ", To interpret morse to english press: " + actions["FROM_MORSE"] + "\n"
 
@@ -29,5 +29,4 @@ while act != actions["QUIT"]:
 
     else:
         print("Invalid")
-    os.system('cls')
 

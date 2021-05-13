@@ -36,12 +36,13 @@ def create_morse(msg: str):
 
 
 def interpret(morse_str: str) -> str:
-    key_list = list(MorseSymbols.SYMBOLS_DICT.keys())
-    val_list = list(MorseSymbols.SYMBOLS_DICT.values())
-    msg = ""
+    if not morse_str.isalnum():
+        key_list = list(MorseSymbols.SYMBOLS_DICT.keys())
+        val_list = list(MorseSymbols.SYMBOLS_DICT.values())
+        msg = ""
 
-    for d in morse_str.split(" "):
-        pos = val_list.index(d)
-        msg += key_list[pos]
+        for d in morse_str.split(" "):
+            pos = val_list.index(d)
+            msg += key_list[pos]
 
-    return msg
+        return msg
