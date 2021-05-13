@@ -1,9 +1,13 @@
 import winsound
 import MorseSymbols
 import time
+import pyttsx3
 
-frequency = 550
-duration = 100
+
+frequency = 600
+duration = 80
+txt_speech = pyttsx3.init()
+txt_speech.setProperty('rate', 100)
 
 
 def morse_beep(kind: MorseSymbols.UnitOfTime):
@@ -45,4 +49,6 @@ def interpret(morse_str: str) -> str:
             pos = val_list.index(d)
             msg += key_list[pos]
 
+        txt_speech.say(msg)
+        txt_speech.runAndWait()
         return msg

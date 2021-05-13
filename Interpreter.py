@@ -4,10 +4,8 @@ import MorseFactory
 
 actions = {
     "QUIT": 'Q',
-    "YES": 'Y',
-    "NO": 'N',
     "FROM_MORSE": 'E',
-    "TO_MORSE": 'M',
+    "TO_MORSE": 'M'
 }
 
 action_str = "\n\nTo quit press: " + actions["QUIT"] + \
