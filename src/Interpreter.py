@@ -12,7 +12,7 @@ action_str = "\n\nTo quit press: " + actions["QUIT"] + \
              ", To translate from english to morse press: " + actions["TO_MORSE"] + \
              ", To interpret morse to english press: " + actions["FROM_MORSE"] + "\n"
 
-# os.system('cls')
+os.system('cls')
 print("Welcome to Morse Code interpreter\nPlease Select an action:")
 
 act = ""

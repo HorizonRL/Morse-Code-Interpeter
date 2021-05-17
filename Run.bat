@@ -1,7 +1,8 @@
-cd "A:\Software Dev\Projects\Morse-Interpter\src"
+A:
+cd A:\Software Dev\Projects\Morse-Code-Interpeter\src"
 
 python Interpreter.py
 
 @echo off
 echo Ciao!
-timeout 0
+timeout 50
